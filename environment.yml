@@ -1,0 +1,14 @@
+name: docs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - ase
+  - numpy
+  - jupyterlab
+  - jupyter-book
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - cookiecutter
