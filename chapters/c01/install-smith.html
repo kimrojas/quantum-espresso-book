@@ -289,12 +289,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-available-quantum-espresso">
+   Using available Quantum Espresso
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quantum-espresso-source-files">
+   Quantum Espresso source files
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -306,6 +335,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-available-quantum-espresso">
+   Using available Quantum Espresso
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quantum-espresso-source-files">
+   Quantum Espresso source files
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -315,7 +362,30 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="installation-on-smith-cluster">
 <h1>Installation on Smith cluster<a class="headerlink" href="#installation-on-smith-cluster" title="Permalink to this headline">#</a></h1>
+<section id="using-available-quantum-espresso">
+<h2>Using available Quantum Espresso<a class="headerlink" href="#using-available-quantum-espresso" title="Permalink to this headline">#</a></h2>
+<p>A compiled and optimized quantum espresso is already made available. To use it:</p>
+<ol class="simple">
+<li><p>Add the custom modules to ~/.bashrc</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;module use --append /home/krojas/share/modulefiles&quot;</span> &gt;&gt; ~/.bashrc
+
+<span class="c1"># Refresh environment</span>
+<span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Activate the environment</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load qe/7.0
+</pre></div>
+</div>
+</section>
+<section id="quantum-espresso-source-files">
+<h2>Quantum Espresso source files<a class="headerlink" href="#quantum-espresso-source-files" title="Permalink to this headline">#</a></h2>
+<p>The quantum espresso source files can be found in</p>
 <p>Duis ad non sit pariatur laboris laboris. Excepteur excepteur ea officia culpa esse labore dolore aliquip nostrud voluptate sint. Proident ullamco est Lorem elit occaecat adipisicing cillum. Elit sint aliqua reprehenderit incididunt non amet excepteur exercitation officia reprehenderit. Velit enim eiusmod aliqua do commodo reprehenderit.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
