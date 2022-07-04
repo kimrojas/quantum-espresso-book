@@ -8,7 +8,7 @@
 title                       : Quantum Espresso Tutorial  # The title of the book. Will be placed in the left navbar.
 author                      : Kurt Rojas  # The author of the book
 copyright                   : "2022"  # Copyright year to be placed in the footer
-logo                        : images/logo/logo.png  # A path to the book logo
+logo                        : "images/logo/logo.png"  # A path to the book logo
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -33,5 +33,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  only_build_toc_files: true
   use_issues_button: true
   use_repository_button: true
+  favion: "images/logo/logo.png"
