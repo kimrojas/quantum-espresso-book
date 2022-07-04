@@ -315,11 +315,50 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#using-available-quantum-espresso">
    Using available Quantum Espresso
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-the-custom-modules-to-bashrc">
+     1. Add the custom modules to
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ~/.bashrc
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activate-the-environment">
+     2. Activate the environment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#compiling-from-source-files">
    Compiling from source files
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-the-source-files">
+     1. Download the source files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activate-compiler-environment">
+     2. Activate compiler environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-and-install">
+     3. Build and install
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-to-path">
+     4. Add to PATH
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -344,11 +383,50 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#using-available-quantum-espresso">
    Using available Quantum Espresso
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-the-custom-modules-to-bashrc">
+     1. Add the custom modules to
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ~/.bashrc
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activate-the-environment">
+     2. Activate the environment
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#compiling-from-source-files">
    Compiling from source files
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-the-source-files">
+     1. Download the source files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activate-compiler-environment">
+     2. Activate compiler environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-and-install">
+     3. Build and install
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-to-path">
+     4. Add to PATH
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -365,22 +443,27 @@ title="Print to PDF"
 <section id="using-available-quantum-espresso">
 <h2>Using available Quantum Espresso<a class="headerlink" href="#using-available-quantum-espresso" title="Permalink to this headline">#</a></h2>
 <p>A compiled and optimized quantum espresso is already made available. To use it:</p>
-<p><strong>1. Add the custom modules to <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code></strong></p>
+<section id="add-the-custom-modules-to-bashrc">
+<h3>1. Add the custom modules to <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code><a class="headerlink" href="#add-the-custom-modules-to-bashrc" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;module use --append /home/krojas/share/modulefiles&quot;</span> &gt;&gt; ~/.bashrc
 
 <span class="c1"># Refresh environment</span>
 <span class="nb">source</span> ~/.bashrc
 </pre></div>
 </div>
-<p><strong>2. Activate the environment</strong></p>
+</section>
+<section id="activate-the-environment">
+<h3>2. Activate the environment<a class="headerlink" href="#activate-the-environment" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load qe/7.0
 </pre></div>
 </div>
 </section>
+</section>
 <hr class="docutils" />
 <section id="compiling-from-source-files">
 <h2>Compiling from source files<a class="headerlink" href="#compiling-from-source-files" title="Permalink to this headline">#</a></h2>
-<p><strong>1. Download the source files</strong></p>
+<section id="download-the-source-files">
+<h3>1. Download the source files<a class="headerlink" href="#download-the-source-files" title="Permalink to this headline">#</a></h3>
 <p>The source file releases can be found in <a class="reference external" href="https://gitlab.com/QEF/q-e/-/tags">QE Releases</a>. In this specific tutorial, we use the <a class="reference external" href="https://gitlab.com/QEF/q-e/-/releases/qe-7.0">QE 7.0 Release</a></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download</span>
 wget https://gitlab.com/QEF/q-e/-/archive/qe-7.0/q-e-qe-7.0.tar.gz
@@ -388,7 +471,9 @@ wget https://gitlab.com/QEF/q-e/-/archive/qe-7.0/q-e-qe-7.0.tar.gz
 tar zxvf q-e-qe-7.0.tar.gz
 </pre></div>
 </div>
-<p><strong>2. Activate compiler environment</strong></p>
+</section>
+<section id="activate-compiler-environment">
+<h3>2. Activate compiler environment<a class="headerlink" href="#activate-compiler-environment" title="Permalink to this headline">#</a></h3>
 <p>We need to activate the required depdendency modules.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load cmake/3.18.3
 module load intel/2020.2.254
@@ -398,7 +483,9 @@ module load libxc/5.2.2
 module load git/2.17
 </pre></div>
 </div>
-<p><strong>3. Build and install</strong></p>
+</section>
+<section id="build-and-install">
+<h3>3. Build and install<a class="headerlink" href="#build-and-install" title="Permalink to this headline">#</a></h3>
 <p>Follow the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize build directory</span>
 mkdir q-e-qe-7.0/_build
@@ -423,7 +510,9 @@ make -j8
 make install
 </pre></div>
 </div>
-<p><strong>4. Add to PATH</strong></p>
+</section>
+<section id="add-to-path">
+<h3>4. Add to PATH<a class="headerlink" href="#add-to-path" title="Permalink to this headline">#</a></h3>
 <p>Add the compiled executables (fancy way to say “program”) to the PATH so it can be discovered by the system</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -434,6 +523,7 @@ make install
 <span class="nb">source</span> ~/.bashrc
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 
