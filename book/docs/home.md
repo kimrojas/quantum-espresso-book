@@ -11,6 +11,6 @@ The objectives of this tutorial are:
 
 
 :::{note}
-This is primarily tailored for Morikawa Laboratory users. If more information is needed feel free to create an issue in the github repository. 
+This is primarily tailored for Morikawa Laboratory users. If more information is needed, feel free to create an issue in the github repository.
 :::
 
