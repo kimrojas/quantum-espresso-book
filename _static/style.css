@@ -7,3 +7,4 @@ h1 {
     margin-right: 0;
     font-weight: bold;
 }
+h1:hover { text-decoration: underline; }
