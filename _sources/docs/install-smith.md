@@ -1,4 +1,4 @@
-# Installation on Smith cluster
+# Installation on Smith cluster UPDATE
 
 ## Using available Quantum Espresso
 
