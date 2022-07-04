@@ -1,16 +1,16 @@
-# Welcome to your Jupyter Book
+# Welcome to the Quantum Espresso tutorial
 
-This is a small sample book to give you a feel for how book content is
-structured.
+This is a small tutorial for starting DFT calculations with quantum espresso.
+
+The objectives of this tutorial are:
+    1. Learn how to install Quantum Espresso
+    2. Do simple energy and structure calculations
+    3. Post-processing and analysis calculations
+    4. Research workflows
+    5. Using Atomic Simulation Environment (ASE)
+
 
 :::{note}
-Here is a note!
+This is primarily tailored for Morikawa Laboratory users. If more information is needed feel free to create an issue in the github repository. 
 :::
 
-And here is a code block:
-
-```
-e = mc^2
-```
-
-Check out the content pages bundled with this sample book to see more.
