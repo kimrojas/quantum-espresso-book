@@ -9,8 +9,6 @@ The objectives of this tutorial are:
 3. Post-processing and analysis calculations
 4. Research workflows
 5. Using Atomic Simulation Environment (ASE)
-6. TEST
-
 
 :::{note}
 This is primarily tailored for Morikawa Laboratory users. If more information is needed, feel free to create an issue in the github repository.
