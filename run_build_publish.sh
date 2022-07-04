@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-jb build --all --path-output ./book/ ./book/docs
+jb build --all --path-output ./book/ ./book/
 
 read -p 'Continue (y/n)? ' cont
 

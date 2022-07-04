@@ -6,7 +6,7 @@ root: intro
 parts:
 - caption: Installation
   chapters:
-  - file: chapters/c01/install-smith
-  - file: chapters/c01/install-local
-  - file: chapters/c01/python-env
+  - file: docs/install-smith
+  - file: docs/install-local
+  - file: docs/python-env
 
