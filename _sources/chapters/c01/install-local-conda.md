@@ -1,3 +1,0 @@
-# Install using CONDA package manager
-
-Eiusmod dolore adipisicing laborum veniam eiusmod sit et do. Laborum consequat veniam sunt incididunt incididunt nostrud ullamco eiusmod elit cillum laboris deserunt officia. Nulla veniam nisi exercitation esse amet cupidatat mollit aliqua Lorem. Tempor sit dolore Lorem consequat magna veniam. Sunt incididunt ullamco deserunt anim mollit velit aliqua esse est in aliquip laborum. Magna ut ipsum reprehenderit ad fugiat ex mollit mollit officia ipsum esse dolor. Laboris reprehenderit dolore incididunt veniam Lorem nulla elit ex occaecat.
