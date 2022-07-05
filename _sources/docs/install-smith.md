@@ -2,7 +2,7 @@
 
 ## Using available Quantum Espresso
 
-A compiled and optimized quantum espresso is already made available. To use it:
+A compiled and optimized quantum espresso is already made so you just need to use it. To use it:
 
 ### Add the custom modules to ~/.bashrc
 ```bash
@@ -20,6 +20,12 @@ module load qe/7.0
 -----
 
 ## Compiling from source files
+
+If you wish to compile your own or a different version of Quantum Espresso, the following procedure is the recipe for the compiled Quantum Espresso discussed above. 
+
+:::{note}
+The compiled Quantum Espresso is okay to use in most general calculations
+:::
 
 ### Download the source files
 
