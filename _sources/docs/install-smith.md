@@ -17,6 +17,7 @@ source ~/.bashrc
 module load qe/7.0
 ```
 
+-----
 
 ## Compiling from source files
 
