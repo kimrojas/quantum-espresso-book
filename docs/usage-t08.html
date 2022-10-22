@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Installation on Smith cluster &#8212; Quantum Espresso Tutorial</title>
+    <title>&lt;no title&gt; &#8212; GOFEE Tutorial</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -21,7 +21,7 @@
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -39,7 +39,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -54,8 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Compile on local computer" href="install-local.html" />
-    <link rel="prev" title="Welcome to the Quantum Espresso tutorial" href="../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -99,7 +97,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Quantum Espresso Tutorial</h1>
+      <h1 class="site-logo" id="site-title">GOFEE Tutorial</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -111,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to the Quantum Espresso tutorial
+                    Welcome to the GOFEE with DFTB+ tutorial
                 </a>
             </li>
         </ul>
@@ -120,20 +118,125 @@ const thebe_selector_output = ".output, .cell_output"
   Installation
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Installation on Smith cluster
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="install-local.html">
-   Compile on local computer
-  </a>
- </li>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="python-env.html">
    Python environment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dftbplus-install.html">
+   DFTB+ installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="gofee-install.html">
+   GOFEE Installation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorial
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="usage-overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="usage-dftb.html">
+   DFTB+ calculation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t01.html">
+     H2O system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t02.html">
+     HB sheet system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t03.html">
+     HB sheet system - parallelized
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="usage-gofee.html">
+   GOFEE calculation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t04.html">
+     C6H6 system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t05.html">
+     C6H6 system - parallelized
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t06.html">
+     C6H6 system - multirun
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="usage-gofee-dftb.html">
+   GOFEE with DFTB+ calculation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t10.html">
+     C6H6 system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t11.html">
+     HB sheet system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="usage-t12.html">
+     Ti5O10 system
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Benchmark
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="benchmark-parallelization.html">
+   Parallelization
   </a>
  </li>
 </ul>
@@ -209,7 +312,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/kimrojas/quantum-espresso-book"
+        <a href="https://github.com/kimrojas/gofee-book"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -226,7 +329,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kimrojas/quantum-espresso-book/issues/new?title=Issue%20on%20page%20%2Fdocs/install-smith.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kimrojas/gofee-book/issues/new?title=Issue%20on%20page%20%2Fdocs/usage-t08.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -254,7 +357,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/docs/install-smith.md"
+        <a href="../_sources/docs/usage-t08.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -312,51 +415,7 @@ title="Print to PDF"
         <i class="fas fa-list"></i> Contents
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-available-quantum-espresso">
-   Using available Quantum Espresso
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-custom-modules-to-bashrc">
-     Add the custom modules to ~/.bashrc
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activate-the-environment">
-     Activate the environment
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#compiling-from-source-files">
-   Compiling from source files
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#download-the-source-files">
-     Download the source files
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activate-compiler-environment">
-     Activate compiler environment
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#build-and-install">
-     Build and install
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-to-path">
-     Add to PATH
-    </a>
-   </li>
-  </ul>
- </li>
+        <ul class="simple visible nav section-nav flex-column">
 </ul>
 
     </nav>
@@ -366,7 +425,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Installation on Smith cluster</h1>
+                <h1><no title></h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -375,51 +434,7 @@ title="Print to PDF"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-available-quantum-espresso">
-   Using available Quantum Espresso
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-custom-modules-to-bashrc">
-     Add the custom modules to ~/.bashrc
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activate-the-environment">
-     Activate the environment
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#compiling-from-source-files">
-   Compiling from source files
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#download-the-source-files">
-     Download the source files
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activate-compiler-environment">
-     Activate compiler environment
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#build-and-install">
-     Build and install
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-to-path">
-     Add to PATH
-    </a>
-   </li>
-  </ul>
- </li>
+                            <ul class="simple visible nav section-nav flex-column">
 </ul>
 
                         </nav>
@@ -430,100 +445,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="installation-on-smith-cluster">
-<h1>Installation on Smith cluster<a class="headerlink" href="#installation-on-smith-cluster" title="Permalink to this headline">#</a></h1>
-<section id="using-available-quantum-espresso">
-<h2>Using available Quantum Espresso<a class="headerlink" href="#using-available-quantum-espresso" title="Permalink to this headline">#</a></h2>
-<p>A compiled and optimized quantum espresso is already made so you just need to use it. To use it:</p>
-<section id="add-the-custom-modules-to-bashrc">
-<h3>Add the custom modules to ~/.bashrc<a class="headerlink" href="#add-the-custom-modules-to-bashrc" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;module use --append /home/krojas/share/modulefiles&quot;</span> &gt;&gt; ~/.bashrc
-
-<span class="c1"># Refresh environment</span>
-<span class="nb">source</span> ~/.bashrc
-</pre></div>
-</div>
-</section>
-<section id="activate-the-environment">
-<h3>Activate the environment<a class="headerlink" href="#activate-the-environment" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load qe/7.0
-</pre></div>
-</div>
-</section>
-</section>
-<hr class="docutils" />
-<section id="compiling-from-source-files">
-<h2>Compiling from source files<a class="headerlink" href="#compiling-from-source-files" title="Permalink to this headline">#</a></h2>
-<p>If you wish to compile your own or a different version of Quantum Espresso, the following procedure is the recipe for the compiled Quantum Espresso discussed above.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The compiled Quantum Espresso is okay to use in most general calculations</p>
-</div>
-<section id="download-the-source-files">
-<h3>Download the source files<a class="headerlink" href="#download-the-source-files" title="Permalink to this headline">#</a></h3>
-<p>The source file releases can be found in <a class="reference external" href="https://gitlab.com/QEF/q-e/-/tags">QE Releases</a>. In this specific tutorial, we use the <a class="reference external" href="https://gitlab.com/QEF/q-e/-/releases/qe-7.0">QE 7.0 Release</a></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download</span>
-wget https://gitlab.com/QEF/q-e/-/archive/qe-7.0/q-e-qe-7.0.tar.gz
-<span class="c1"># Extract</span>
-tar zxvf q-e-qe-7.0.tar.gz
-</pre></div>
-</div>
-</section>
-<section id="activate-compiler-environment">
-<h3>Activate compiler environment<a class="headerlink" href="#activate-compiler-environment" title="Permalink to this headline">#</a></h3>
-<p>We need to activate the required depdendency modules.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module load cmake/3.18.3
-module load intel/2020.2.254
-module load intelmpi/2020.2.254
-module load python/3.8
-module load libxc/5.2.2
-module load git/2.17
-</pre></div>
-</div>
-</section>
-<section id="build-and-install">
-<h3>Build and install<a class="headerlink" href="#build-and-install" title="Permalink to this headline">#</a></h3>
-<p>Follow the following commands:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize build directory</span>
-mkdir q-e-qe-7.0/_build
-<span class="nb">cd</span> q-e-qe-7.0/_build
-
-<span class="c1"># Build</span>
-cmake <span class="se">\</span>
-    -DQE_ENABLE_MPI<span class="o">=</span>ON <span class="se">\</span>
-    -DQE_ENABLE_TEST<span class="o">=</span>ON <span class="se">\</span>
-    -DQE_ENABLE_SCALAPACK<span class="o">=</span>ON <span class="se">\</span>
-    -DQE_FFTW_VENDOR<span class="o">=</span>Intel_DFTI <span class="se">\</span>
-    -DCMAKE_C_COMPILER<span class="o">=</span>mpiicc <span class="se">\</span>
-    -DCMAKE_Fortran_COMPILER<span class="o">=</span>mpiifort <span class="se">\</span>
-    -DCMAKE_INSTALL_PREFIX<span class="o">=</span>../_install <span class="se">\</span>
-    -DQE_ENABLE_LIBXC<span class="o">=</span>ON <span class="se">\</span>
-    ../
-
-<span class="c1"># Compile</span>
-make -j8
-
-<span class="c1"># Install</span>
-make install
-</pre></div>
-</div>
-</section>
-<section id="add-to-path">
-<h3>Add to PATH<a class="headerlink" href="#add-to-path" title="Permalink to this headline">#</a></h3>
-<p>Add the compiled executables (fancy way to say “program”) to the PATH so it can be discovered by the system</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Replace <code class="docutils literal notranslate"><span class="pre">&lt;full-QE-directory-path&gt;</span></code> with the full path of your quantum espresso directory.</p>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s1">&#39;export PATH=&lt;full-QE-directory-path&gt;/q-e-qe-7.0/_install/bin:$PATH&#39;</span> &gt;&gt; ~/.bashrc
-
-<span class="nb">source</span> ~/.bashrc
-</pre></div>
-</div>
-</section>
-</section>
-</section>
-
+  
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -551,20 +473,6 @@ make install
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to the Quantum Espresso tutorial</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="install-local.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Compile on local computer</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>

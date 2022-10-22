@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to the Quantum Espresso tutorial &#8212; Quantum Espresso Tutorial</title>
+    <title>Welcome to the GOFEE with DFTB+ tutorial &#8212; GOFEE Tutorial</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -21,7 +21,7 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -39,7 +39,7 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation on Smith cluster" href="docs/install-smith.html" />
+    <link rel="next" title="Python environment" href="docs/python-env.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -98,7 +98,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Quantum Espresso Tutorial</h1>
+      <h1 class="site-logo" id="site-title">GOFEE Tutorial</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -110,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1 current active">
                 <a class="reference internal" href="#">
-                    Welcome to the Quantum Espresso tutorial
+                    Welcome to the GOFEE with DFTB+ tutorial
                 </a>
             </li>
         </ul>
@@ -121,18 +121,123 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/install-smith.html">
-   Installation on Smith cluster
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="docs/install-local.html">
-   Compile on local computer
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="docs/python-env.html">
    Python environment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs/dftbplus-install.html">
+   DFTB+ installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs/gofee-install.html">
+   GOFEE Installation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorial
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs/usage-overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/usage-dftb.html">
+   DFTB+ calculation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t01.html">
+     H2O system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t02.html">
+     HB sheet system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t03.html">
+     HB sheet system - parallelized
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/usage-gofee.html">
+   GOFEE calculation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t04.html">
+     C6H6 system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t05.html">
+     C6H6 system - parallelized
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t06.html">
+     C6H6 system - multirun
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/usage-gofee-dftb.html">
+   GOFEE with DFTB+ calculation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t10.html">
+     C6H6 system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t11.html">
+     HB sheet system
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/usage-t12.html">
+     Ti5O10 system
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Benchmark
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs/benchmark-parallelization.html">
+   Parallelization
   </a>
  </li>
 </ul>
@@ -208,7 +313,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/kimrojas/quantum-espresso-book"
+        <a href="https://github.com/kimrojas/gofee-book"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -225,7 +330,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kimrojas/quantum-espresso-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kimrojas/gofee-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -302,7 +407,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to the Quantum Espresso tutorial</h1>
+                <h1>Welcome to the GOFEE with DFTB+ tutorial</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -314,20 +419,31 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-the-quantum-espresso-tutorial">
-<h1>Welcome to the Quantum Espresso tutorial<a class="headerlink" href="#welcome-to-the-quantum-espresso-tutorial" title="Permalink to this headline">#</a></h1>
-<p>This is a small tutorial for starting DFT calculations with quantum espresso.</p>
-<p>The objectives of this tutorial are:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-the-gofee-with-dftb-tutorial">
+<h1>Welcome to the GOFEE with DFTB+ tutorial<a class="headerlink" href="#welcome-to-the-gofee-with-dftb-tutorial" title="Permalink to this headline">#</a></h1>
+<p>This is a small documentation on how to use GOFEE with DFTB+</p>
+<p>The general topics to explore in this documentation are:</p>
 <ol class="simple">
-<li><p>Learn how to install Quantum Espresso</p></li>
-<li><p>Do simple energy and structure calculations</p></li>
-<li><p>Post-processing and analysis calculations</p></li>
-<li><p>Research workflows</p></li>
-<li><p>Using Atomic Simulation Environment (ASE)</p></li>
+<li><p>Preparing a compatible python environment</p></li>
+<li><p>Installing GOFEE</p></li>
+<li><p>Installing DFTB+</p></li>
+<li><p>Testing GOFEE and DFTB+ installation</p></li>
+<li><p>Using GOFEE with DFTB+ as the calculator</p></li>
 </ol>
+<hr>
+<p>Download tutorial files here: <a class="reference download internal" download="" href="_downloads/858b200bac0283121e6a0deae75b7f80/test-suite.tar.gz"><code class="xref download docutils literal notranslate"><span class="pre">test-suite.tar.gz</span></code></a>.</p>
+<p>Or use <code class="docutils literal notranslate"><span class="pre">wget</span></code> in command line</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Command line download</span>
+wget https://github.com/kimrojas/gofee-book/raw/master/book/files/test-suite.tar.gz
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This is primarily tailored for Morikawa Laboratory users. If more information is needed, feel free to create an issue in the github repository.</p>
+<p>If more information is needed, feel free to create an issue in the github repository.</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -360,10 +476,10 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="docs/install-smith.html" title="next page">
+    <a class='right-next' id="next-link" href="docs/python-env.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Installation on Smith cluster</p>
+        <p class="prev-next-title">Python environment</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
