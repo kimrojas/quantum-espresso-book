@@ -25,16 +25,15 @@ conda --version
 
 1. Download the environment information file (`qe_environment.yml`)
 
-
-```bash
-wget https://raw.githubusercontent.com/kimrojas/quantum-espresso-book/master/download/qe_environment.yml
-```
+   ```bash
+   wget https://raw.githubusercontent.com/kimrojas/quantum-espresso-book/master/download/qe_environment.yml
+   ```
 
 2. Create the environment using the file
 
-```bash
-conda env create -f qe_environment.yml
-```
+   ```bash
+   conda env create -f qe_environment.yml
+   ```
 
 ```{admonition} Activation?
 :class: tip
