@@ -6,7 +6,31 @@ root: intro
 parts:
 - caption: Installation
   chapters:
-  - file: docs/install-smith
-  - file: docs/install-local
   - file: docs/python-env
+  - file: docs/dftbplus-install
+    # sections:
+    #   - file: docs/dftbplus-compile
+    #   - file: docs/dftbplus-conda
+  - file: docs/gofee-install
+- caption: Tutorial
+  chapters:
+  - file: docs/usage-overview
+  - file: docs/usage-dftb
+    sections:
+    - file: docs/usage-t01
+    - file: docs/usage-t02
+    - file: docs/usage-t03
+  - file: docs/usage-gofee
+    sections:
+    - file: docs/usage-t04
+    - file: docs/usage-t05
+    - file: docs/usage-t06
+  - file: docs/usage-gofee-dftb
+    sections:
+    - file: docs/usage-t10
+    - file: docs/usage-t11
+    - file: docs/usage-t12
+- caption: Benchmark
+  chapters:
+  - file: docs/benchmark-parallelization
 

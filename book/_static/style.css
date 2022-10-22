@@ -1,9 +1,10 @@
 h1 { 
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: bold;
+    /* text-shadow: 2px 2px #c5c5c5; */
 }
 h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     margin-top: 2em;
     margin-bottom: 0.83em;
 }

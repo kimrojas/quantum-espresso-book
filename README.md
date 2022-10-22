@@ -1,10 +1,10 @@
-# Quantum Espresso Tutorial
+# GOFEE with DFTB+ Tutorial
 
-Documentations and tutorial for Quantum Espresso usage
+Documentations and tutorial for GOFEE with DFTB+ usage
 
-## Usage
+<!-- ## Usage -->
 
-### Building the book
+<!-- ### Building the book
 
 If you'd like to develop and/or build the Quantum Espresso Tutorial book, you should:
 
@@ -14,9 +14,9 @@ If you'd like to develop and/or build the Quantum Espresso Tutorial book, you sh
 4. Run `jupyter-book clean quantum-espresso-book/` to remove any existing builds
 5. Run `jupyter-book build quantum-espresso-book/`
 
-A fully-rendered HTML version of the book will be built in `quantum-espresso-book/_build/html/`.
+A fully-rendered HTML version of the book will be built in `gofee-book/_build/html/`. -->
 
-### Hosting the book
+<!-- ### Hosting the book
 
 Please see the [Jupyter Book documentation](https://jupyterbook.org/publish/web.html) to discover options for deploying a book online using services such as GitHub, GitLab, or Netlify.
 
@@ -24,8 +24,8 @@ For GitHub and GitLab deployment specifically, the [cookiecutter-jupyter-book](h
 
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/kimrojas/quantum-espresso-book/graphs/contributors).
+We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/kimrojas/gofee-book/graphs/contributors).
 
 ## Credits
 
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book). -->
