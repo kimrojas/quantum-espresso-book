@@ -1,4 +1,4 @@
-# Welcome to the Quantum Espresso tutorial
+# Welcome
 
 This is a small documentation on how to use Quantum Espresso (QE).
 
