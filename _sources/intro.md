@@ -1,24 +1,23 @@
-# Welcome to the GOFEE with DFTB+ tutorial
+# Welcome
 
-This is a small documentation on how to use GOFEE with DFTB+
+This is a small documentation on how to use Quantum Espresso (QE).
 
 The general topics to explore in this documentation are:
 
-1. Preparing a compatible python environment
-2. Installing GOFEE
-3. Installing DFTB+
-4. Testing GOFEE and DFTB+ installation
-5. Using GOFEE with DFTB+ as the calculator
+1. Installing of Quantum Espresso
+2. Energy and structure optimization calculations
+3. Band structure and Density of States calculation
+4. Interfacing with Atomic simulation environment (ASE)
 
 <hr>
 
-Download tutorial files here: {download}`test-suite.tar.gz <files/test-suite.tar.gz>`.
+<!-- Download tutorial files here: {download}`test-suite.tar.gz <files/test-suite.tar.gz>`.
 
 Or use `wget` in command line
 ```bash
 # Command line download
 wget https://github.com/kimrojas/gofee-book/raw/master/book/files/test-suite.tar.gz
-```
+``` -->
 
 :::{note}
 If more information is needed, feel free to create an issue in the github repository.
