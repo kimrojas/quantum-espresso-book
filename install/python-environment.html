@@ -471,14 +471,15 @@ title="Print to PDF"
 <h1>Python Environment<a class="headerlink" href="#python-environment" title="Permalink to this headline">#</a></h1>
 <section id="a-conda-installation">
 <h2>A. CONDA installation<a class="headerlink" href="#a-conda-installation" title="Permalink to this headline">#</a></h2>
-<ol class="simple">
-<li><p>Check if conda is available</p></li>
-</ol>
+<ol>
+<li><p>Check if conda is available</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda --version
 </pre></div>
 </div>
+</li>
+</ol>
 <p><strong>if conda was not found, proceed to step 2 (SKIP IF CONDA IS AVAILABLE)</strong></p>
-<ol class="simple">
+<ol>
 <li><p>Install Miniconda <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">WEBLINK</a></p>
 <ol class="simple">
 <li><p>Visit the website</p></li>
@@ -486,11 +487,12 @@ title="Print to PDF"
 <li><p>Install (choose <code class="docutils literal notranslate"><span class="pre">initialize</span></code> when asked)</p></li>
 </ol>
 </li>
-<li><p>Recheck if conda was installed successfully</p></li>
-</ol>
+<li><p>Recheck if conda was installed successfully</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda --version
 </pre></div>
 </div>
+</li>
+</ol>
 </section>
 <section id="b-create-the-environment">
 <h2>B. Create the environment<a class="headerlink" href="#b-create-the-environment" title="Permalink to this headline">#</a></h2>
@@ -504,15 +506,15 @@ title="Print to PDF"
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda env create -f qe_environment.yml
 </pre></div>
 </div>
-</li>
-</ol>
 <div class="tip admonition">
-<p class="admonition-title">Activation?</p>
+<p class="admonition-title">QE Environment Activation?</p>
 <p>To activate the environment, simply run:</p>
 <p><code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">activate</span> <span class="pre">qe</span></code>
 or
 <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">qe</span></code></p>
 </div>
+</li>
+</ol>
 </section>
 </section>
 
