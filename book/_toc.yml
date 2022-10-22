@@ -7,7 +7,7 @@ parts:
 - caption: Installation
   chapters:
   - file: install/intel-compiler
-  - file: docs/dftbplus-install
+  - file: install/python-environment
     # sections:
     #   - file: docs/dftbplus-compile
     #   - file: docs/dftbplus-conda
