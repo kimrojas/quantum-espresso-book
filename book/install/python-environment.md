@@ -23,42 +23,26 @@ conda --version
 
 ## B. Create the environment
 
-1. Download the 
+1. Download the environment information file (`qe_environment.yml`)
 
-
-
-
-## A. In Supercomputer
-
-In the usual working environment, you will be using a supercomputer to run the simulations. Here, the administator usually provides a ready to use Intel compiler and MKL library. In this case, you can just use the one provided.
-
-Example: In my supercomputer, I can activate the provided Intel package using
 
 ```bash
-module load intel intelmkl
+wget https://raw.githubusercontent.com/kimrojas/quantum-espresso-book/master/download/qe_environment.yml
 ```
 
-*Please consult your administrator about this.*
-
-
-## B. In computer without Intel Package
-
-In the case that you are installing in a local computer or a supercomputer without Intel Compiler & MKL, please follow the instructions here.
-
-There are two main files that you need to install. 
-1. Intel oneAPI Base toolkit ([WEBLINK](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html))
-   - Python (with conda)
-   - C compiler
-   - Math Kernel Library (MKL)
-2. Intel oneAPI HPC toolkit  ([WEBLINK](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html))
-   - Fortran compiler
-   - MPI library
-
-**Just go to the website, download the installer and install.**
-
-Once done, you can activate the Intel compiler by using
+2. Create the environment using the file
 
 ```bash
-source ~/intel/oneapi/setvars.sh
-# This is the default installation directory
+conda env create -f qe_environment.yml
+```
+
+```{admonition} Activation?
+:class: tip
+
+To activate the environment, simply run:
+
+`source activate qe`
+or
+`conda activate qe`
+
 ```

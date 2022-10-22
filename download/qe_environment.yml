@@ -1,4 +1,4 @@
-name: qe-test
+name: qe
 channels:
   - conda-forge
 dependencies:
