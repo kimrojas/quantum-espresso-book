@@ -6,7 +6,7 @@ root: intro
 parts:
 - caption: Installation
   chapters:
-  - file: docs/python-env
+  - file: install/intel-compiler
   - file: docs/dftbplus-install
     # sections:
     #   - file: docs/dftbplus-compile
