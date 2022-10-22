@@ -18,7 +18,7 @@ module load intel intelmkl
 In the case that you are installing in a local computer or a supercomputer without Intel Compiler & MKL, please follow the instructions here.
 
 There are two main files that you need to install. 
-1. Intel oneAPI Base toolkit ([WEBLINK](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html))
+1. Intel oneAPI Base toolkit ([WEBLINK](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html))
    - Python (with conda)
    - C compiler
    - Math Kernel Library (MKL)
