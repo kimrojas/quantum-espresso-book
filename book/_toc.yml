@@ -12,7 +12,6 @@ parts:
     # sections:
     #   - file: docs/dftbplus-compile
     #   - file: docs/dftbplus-conda
-  - file: docs/gofee-install
 - caption: Tutorial
   chapters:
   - file: docs/usage-overview
