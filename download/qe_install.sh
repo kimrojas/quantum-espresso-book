@@ -38,7 +38,7 @@ cmake \
 -DCMAKE_C_COMPILER=mpiicc \
 -DCMAKE_Fortran_COMPILER=mpiifort \
 -DCMAKE_INSTALL_PREFIX=../_install \
-../ >> qe_build.log
+../ >> qe_build.log 2>&1
 
 echo "#########################################################################" >> qe_build.log
 echo "COMPLETE ..."
