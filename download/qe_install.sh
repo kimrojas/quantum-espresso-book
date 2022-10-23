@@ -25,9 +25,11 @@ cd ./qe-7.0/_build
 # This is a serial build because I found errors when doing parallel
 echo "Build QE programs"
 
-echo "#########################################################################" >> qe_build.log
-echo "                                BUILD                                    " >> qe_build.log
-echo "#########################################################################" >> qe_build.log
+>>qe_build.log 2>&1
+
+echo "#########################################################################" >> qe_build.log 2>&1
+echo "                                BUILD                                    " >> qe_build.log 2>&1
+echo "#########################################################################" >> qe_build.log 2>&1
 cmake \
 -DQE_ENABLE_MPI=ON \
 -DQE_ENABLE_TEST=ON \
@@ -47,9 +49,13 @@ echo "Installing QE programs"
 echo "#########################################################################" >> qe_build.log
 echo "                                INSTALL                                  " >> qe_build.log
 echo "#########################################################################" >> qe_build.log
-make install >> qe_build.log
+make install >> qe_build.log 2>&1
 echo "#########################################################################" >> qe_build.log
 echo "COMPLETE ..."
+echo " "
+
+echo " "
+echo "!! INSTALLATION COMPLETE !!"
 echo " "
 
 # Print Usage guide
