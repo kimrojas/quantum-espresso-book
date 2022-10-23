@@ -1,0 +1,69 @@
+#!/bin/bash
+
+echo "Create directory"
+mkdir -p QE
+cd QE/
+echo "COMPLETE ..."
+
+echo "Download QE file "
+curl -O https://gitlab.com/QEF/q-e/-/archive/qe-7.0/q-e-qe-7.0.tar.gz
+echo "COMPLETE ..."
+
+echo "Unzip QE file"
+tar zxf q-e-qe-7.0.tar.gz
+mv q-e-qe-7.0 qe-7.0
+echo "COMPLETE ..."
+
+# Navigate to build directory
+mkdir -p ./qe-7.0/_build
+cd ./qe-7.0/_build
+
+# Start build
+# This is a serial build because I found errors when doing parallel
+echo "Build QE programs"
+
+echo "#########################################################################" >> qe_build.log
+echo "                                BUILD                                    " >> qe_build.log
+echo "#########################################################################" >> qe_build.log
+cmake \
+-DQE_ENABLE_MPI=ON \
+-DQE_ENABLE_TEST=ON \
+-DQE_ENABLE_SCALAPACK=ON \
+-DQE_FFTW_VENDOR=Intel_DFTI \
+-DCMAKE_C_COMPILER=mpiicc \
+-DCMAKE_Fortran_COMPILER=mpiifort \
+-DCMAKE_INSTALL_PREFIX=../_install \
+../ >> qe_build.log
+
+echo "#########################################################################" >> qe_build.log
+echo "COMPLETE ..."
+
+# INSTALL 
+echo "Installing QE programs"
+echo "#########################################################################" >> qe_build.log
+echo "                                INSTALL                                  " >> qe_build.log
+echo "#########################################################################" >> qe_build.log
+make install >> qe_buil.log
+echo "#########################################################################" >> qe_build.log
+echo "COMPLETE ..."
+
+# Print Usage guide
+echo "- - - - - - - - - - - - - - - - - - - - - -"
+echo "USAGE GUIDE"
+echo " "
+cd ../_install/bin
+TMPBIN=$(pwd)
+echo "add to ~/.bashrc:"
+echo " "
+echo "   export PATH="$TMPBIN':$PATH'
+echo " "
+echo "- - - - - - - - - - - - - - - - - - - - - -"
+
+
+
+
+
+
+
+
+
