@@ -45,7 +45,7 @@ echo "COMPLETE ..."
 echo " "
 
 # INSTALL 
-echo "Installing QE programs"
+echo "Installing QE programs (Grab some coffee, this will take a moment)"
 echo "#########################################################################" >> qe_build.log
 echo "                                INSTALL                                  " >> qe_build.log
 echo "#########################################################################" >> qe_build.log
