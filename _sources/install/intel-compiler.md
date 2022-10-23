@@ -34,3 +34,11 @@ Once done, you can activate the Intel compiler by using
 source ~/intel/oneapi/setvars.sh
 # This is the default installation directory
 ```
+
+```{admonition} Intel Package Activation?
+:class: tip
+
+To activate the Intel package, simply run:
+
+`source ~/intel/oneapi/setvars.sh`
+```
