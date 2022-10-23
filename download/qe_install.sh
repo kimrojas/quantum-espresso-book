@@ -4,15 +4,18 @@ echo "Create directory"
 mkdir -p QE
 cd QE/
 echo "COMPLETE ..."
+echo " "
 
 echo "Download QE file "
 curl -O https://gitlab.com/QEF/q-e/-/archive/qe-7.0/q-e-qe-7.0.tar.gz
 echo "COMPLETE ..."
+echo " "
 
 echo "Unzip QE file"
 tar zxf q-e-qe-7.0.tar.gz
 mv q-e-qe-7.0 qe-7.0
 echo "COMPLETE ..."
+echo " "
 
 # Navigate to build directory
 mkdir -p ./qe-7.0/_build
@@ -37,15 +40,17 @@ cmake \
 
 echo "#########################################################################" >> qe_build.log
 echo "COMPLETE ..."
+echo " "
 
 # INSTALL 
 echo "Installing QE programs"
 echo "#########################################################################" >> qe_build.log
 echo "                                INSTALL                                  " >> qe_build.log
 echo "#########################################################################" >> qe_build.log
-make install >> qe_buil.log
+make install >> qe_build.log
 echo "#########################################################################" >> qe_build.log
 echo "COMPLETE ..."
+echo " "
 
 # Print Usage guide
 echo "- - - - - - - - - - - - - - - - - - - - - -"
@@ -58,7 +63,7 @@ echo " "
 echo "   export PATH="$TMPBIN':$PATH'
 echo " "
 echo "- - - - - - - - - - - - - - - - - - - - - -"
-
+echo " "
 
 
 
