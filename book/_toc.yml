@@ -8,6 +8,7 @@ parts:
   chapters:
   - file: install/intel-compiler
   - file: install/python-environment
+  - file: install/quantum-espresso
     # sections:
     #   - file: docs/dftbplus-compile
     #   - file: docs/dftbplus-conda
