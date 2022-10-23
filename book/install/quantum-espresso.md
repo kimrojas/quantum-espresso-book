@@ -30,9 +30,13 @@ which git
 
 For your convenience, I have prepared an installer script that will handle all the installation procedures. It is currently set to install [**Quantum Espresso v7.0**](https://gitlab.com/QEF/q-e/-/releases/qe-7.0)
 
+Download the installer script
 ```bash
 wget https://raw.githubusercontent.com/kimrojas/quantum-espresso-book/master/download/qe_install.sh
 ```
+
+
+
 
 
 ## A. CONDA installation
