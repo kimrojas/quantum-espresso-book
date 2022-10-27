@@ -1,0 +1,5 @@
+ &PROJWFC
+    prefix='pwscf',
+    Emin=-20.0, Emax=20.0, DeltaE=0.01
+    ngauss = 0, degauss=0.01,
+ /
