@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -S /bin/bash
 #$ -cwd
-#$ -q xb1.q
-#$ -pe x32 32
+#$ -q xe2.q
+#$ -pe x12 12
 #$ -j y
 #$ -N calc
 

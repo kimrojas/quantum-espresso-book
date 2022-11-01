@@ -1,10 +1,11 @@
 #!/bin/bash
 #$ -S /bin/bash
 #$ -cwd
-#$ -q x20.q
-#$ -pe x52 52
+#$ -q x17.q
+#$ -pe x32 32
 #$ -j y
 #$ -N calc
+#$ -t 1-4
 
 module load qe/7.0
 module load ase
@@ -18,7 +19,7 @@ cat $PE_HOSTFILE | awk '{ print $1":"$2/ENVIRON["OMP_NUM_THREADS"] }' > hostfile
 
 echo "========= Job started  at `date` =========="
 
-python run_calc.py
+python run_calc.py -i $SGE_TASK_ID
 
 echo "========= Job finished at `date` =========="
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -S /bin/bash
 #$ -cwd
-#$ -q xb1.q
+#$ -q x17.q
 #$ -pe x32 32
 #$ -j y
 #$ -N calc
@@ -19,6 +19,8 @@ cat $PE_HOSTFILE | awk '{ print $1":"$2/ENVIRON["OMP_NUM_THREADS"] }' > hostfile
 echo "========= Job started  at `date` =========="
 
 python run_calc.py
+
+python plotdat.py
 
 echo "========= Job finished at `date` =========="
 
