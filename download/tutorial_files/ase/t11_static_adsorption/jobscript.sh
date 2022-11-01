@@ -5,7 +5,7 @@
 #$ -pe x40 40
 #$ -j y
 #$ -N calc
-#$ -t 1
+#$ -t 1-4
 
 module load qe/7.0
 module load ase
