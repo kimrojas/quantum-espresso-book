@@ -52,8 +52,14 @@ heightref = {
 
 
 # -- SETTINGS ------------------------------------------------------------------
+all_settings = []
+for s in siteref.keys():
+    for r in rotref.keys():
+        all_settings.append((s, r))
+
+site, rot = all_settings[args.run_idx - 1]
 prefix = "run_files"
-settings = {"site": list(siteref.keys())[args.run_idx - 1]}
+settings = {"site": site, "rot": rot}
 
 command = f"mpirun pw.x -in PREFIX.pwi > PREFIX.pwo"
 os.environ["ASE_ESPRESSO_COMMAND"] = command
@@ -108,7 +114,7 @@ def run_calculation(dirname, fname, atoms, h):
             "verbosity": "high",
             "tprnfor": True,
             "tstress": True,
-            "nstep": 1000,
+            "nstep": 0, #1000,
             "etot_conv_thr": 1.0e-5,
             "forc_conv_thr": 1.0e-4,
         },
@@ -161,24 +167,9 @@ def run_calculation(dirname, fname, atoms, h):
 
 # --- RUN PART -----------------------------------------------------------------
 
-# RUN ROTATION CONFIG -- A --
-settings["rot"] = "A"
+# RUN ROTATION CONFIG
 height_key = "_".join([settings["site"], settings["rot"]])
 settings["height"] = heightref[height_key]
 dirname, fname, atoms = create_adsorption_structure(opt=settings)
 run_calculation(dirname, fname, atoms, settings["height"])
 
-# RUN ROTATION CONFIG -- B --
-settings["rot"] = "B"
-height_key = "_".join([settings["site"], settings["rot"]])
-settings["height"] = heightref[height_key]
-dirname, fname, atoms = create_adsorption_structure(opt=settings)
-run_calculation(dirname, fname, atoms, settings["height"])
-
-
-# RUN ROTATION CONFIG -- C --
-settings["rot"] = "C"
-height_key = "_".join([settings["site"], settings["rot"]])
-settings["height"] = heightref[height_key]
-dirname, fname, atoms = create_adsorption_structure(opt=settings)
-run_calculation(dirname, fname, atoms, settings["height"])
